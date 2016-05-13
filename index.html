@@ -1,0 +1,140 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>惊蛰云</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link href="css/style.css" rel="stylesheet" type="text/css"></head>
+    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+  <body>
+    <!--导航条-->
+    <div class="header">
+      <!--logo-->
+      <div class="logo">
+        <a href="http://qxu1590360385.my3w.com/" title="惊蛰云-惊蛰云科技官方网站">
+          <img src="img/logo.jpg" /></a>
+      </div>
+    </div>
+    <!--轮播图-->
+    <div class="banner-box">
+      <div class="bd">
+        <ul>
+          <li style="background:#F3E5D8;">
+            <div class="m-width">
+              <a href="http://detail.koudaitong.com/show/goods?alias=2onstfspwe2i3&amp;activity=" target="_blank" title="轮播图3">
+                <img src="http://www.jingzheyun.com/uploadfile/2016/0512/20160512061149837.png" /></a>
+            </div>
+          </li>
+          <li style="background:#F3E5D8;">
+            <div class="m-width">
+              <a href="http://detail.koudaitong.com/show/goods?alias=2onstfspwe2i3&amp;activity=" target="_blank" title="轮播图1">
+                <img src="http://www.jingzheyun.com/uploadfile/2016/0512/20160512061211698.png" /></a>
+            </div>
+          </li>
+          <li style="background:#F3E5D8;">
+            <div class="m-width">
+              <a href="http://detail.koudaitong.com/show/goods?alias=2onstfspwe2i3&amp;activity=" target="_blank" title="轮播图2">
+                <img src="http://www.jingzheyun.com/uploadfile/2016/0512/20160512061230668.png" /></a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="banner-btn">
+        <a class="prev" href="javascript:void(0);"></a>
+        <a class="next" href="javascript:void(0);"></a>
+        <div class="hd">
+          <ul></ul>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">$(document).ready(function() {
+
+        $(".prev,.next").hover(function() {
+          $(this).stop(true, false).fadeTo("show", 0.9);
+        },
+        function() {
+          $(this).stop(true, false).fadeTo("show", 0.4);
+        });
+
+        $(".banner-box").slide({
+          titCell: ".hd ul",
+          mainCell: ".bd ul",
+          effect: "fold",
+          interTime: 3500,
+          delayTime: 500,
+          autoPlay: true,
+          autoPage: true,
+          trigger: "click"
+        });
+        //定义轮播图高度
+        var oriWidth = 1920;
+        var oriHeight = 700;
+        var screenWidth = $(window).width();
+        //alert(screenWidth);
+        var screenHeight = screenWidth * oriHeight / oriWidth;
+        //alert(screenHeight);
+        $(".banner-box").height(screenHeight);
+        $(".banner-box .bd li").height(screenHeight);
+        $(".banner-box .bd li img").width(screenWidth);
+        $(".banner-box .bd li img").height(screenHeight);
+        $(".banner-btn").css("top", (screenHeight - 104) / 2 + "px");
+        $(".banner-box .hd").css("top", screenHeight / 2 + "px");
+      });</script>
+     
+
+    <!--10个大图-->
+    <div class="datu">
+      <ul>
+        <li><a href=""><img src="img/tu01.png" alt="" /></a></li>
+        <li><a href=""><img src="img/tu02.png" alt="" /></a></li>
+        <li><a href=""><img src="img/tu03.png" alt="" /></a></li>
+        <li><a href=""><img src="img/tu04.png" alt="" /></a></li>
+        <li><a href=""><img src="img/tu05.png" alt="" /></a></li>
+        <li><a href=""><img src="img/tu06.png" alt="" /></a></li>
+        <li><a href=""><img src="img/tu07.png" alt="" /></a></li>
+        <li><a href=""><img src="img/tu08.png" alt="" /></a></li>
+        <li><a href=""><img src="img/tu09.png" alt="" /></a></li>
+        <li><a href=""><img src="img/tu10.png" alt="" /></a></li>
+      </ul>
+    </div>
+
+    <div class="fixedads">
+      <ul>
+        <!---->
+        <li>
+          <a href="http://detail.koudaitong.com/show/goods?alias=2onstfspwe2i3&amp;activity=" target="_blank" title="官方微信">
+            <img src="http://www.jingzheyun.com/uploadfile/2016/0127/20160127114856771.png" /></a>
+        </li>
+        <li>
+          <a href="http://weibo.com/u/5559711512?is_all=1" target="_blank" title="官方微博">
+            <img src="http://www.jingzheyun.com/uploadfile/2016/0127/20160127115123237.jpg" /></a>
+        </li>
+        <li>
+          <a href="http://detail.koudaitong.com/show/goods?alias=2onstfspwe2i3&amp;activity=" target="_blank" title="官方视频">
+            <img src="http://www.jingzheyun.com/uploadfile/2016/0127/20160127115526653.png" /></a>
+        </li>
+        <!--<li><a href="http://www.baidu.com" target="_blank"><img src="/theme/index/images/img1.jpg" /></a></li>
+        <li><a href="http://www.baidu.com" target="_blank"><img src="/theme/index/images/img2.jpg" /></a></li>
+        <li><a href="http://www.baidu.com" target="_blank"><img src="/theme/index/images/img3.jpg" /></a></li>--></ul>
+    </div>
+    <div class="footer">
+      <div class="flink">
+        <p>北京惊蛰云科技有限责任公司</p>
+        <p>友情链接:
+          <a href="http://www.mi.com/" target="_blank">小米科技</a>
+          <a href="http://www.msn.cn" target="_blank">MSN中国</a>
+          <a href="http://www.qq.com" target="_blank">腾讯网</a>
+          <a href="http://www.163.com" target="_blank">网易</a>
+          <a href="http://www.sina.com" target="_blank">新浪网</a>
+          <script type="text/javascript">var musid = "154950002";</script>
+          <script type="text/javascript" src="http://static.union.mi.com/js/u.js"></script>
+          <!--<a href="http://www.baidu.com" target="_blank">鐧惧害</a><a href="http://www.baidu.com" target="_blank">鏂版氮</a>--></p>
+        <p>本公司保留所有权利|ICP备案证书号:京ICP备15042328号-1</p>
+      </div>
+    </div>
+  </body>
+
+</html>
